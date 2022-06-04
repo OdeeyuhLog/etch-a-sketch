@@ -5,25 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>Etch-A-Sketch</title>
   </head>
   <body>
-    <h1>Etch-A-Sketch</h1>
-    <div class="controls">
-      <button class="bwmode">B/W Mode</button>
-      <button class="rgbmode">RGB Mode</button>
-      <input type="text" />
-      <button onclick="">APPLY</button>
-    </div>
     <div class="container">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
+      <h1>ETCH-A-SKETCH</h1>
+      <div class="canvas"></div>
+      <div class="controls">
+        <div class="buttons">
+          <button value="blackmode" class="active" id="blackmode">Black</button>
+          <button value="aestheticmode" class="" id="aestheticmode">
+            Aesthetic
+          </button>
+          <button value="rgbmode" class="" id="rgbmode">RGB</button>
+        </div>
+        <div class="resizer">
+          <h1>16 x 16 px</h1>
+          <input
+            type="range"
+            min="2"
+            max="96"
+            value="16"
+            step="1"
+            id="resizer"
+          />
+        </div>
+      </div>
     </div>
+    <p class="footer">
+      <span><i class="fa-brands fa-github-square"></i></span>
+      Made by OdeeyuhLog
+    </p>
 
     <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4134a85b77.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
