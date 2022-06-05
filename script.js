@@ -24,7 +24,7 @@ function resizeSlider() {
     let val = document.getElementById('resizer').value;
     document.querySelector('.resizer h1').textContent = `${val}px x ${val}px`;
     setSize(val);
-    paintSquares();
+    paintSquares(currentmode);
   });
 }
 
@@ -42,8 +42,6 @@ function chooseColor() {
         paintSquares(currentmode);
         showActiveMode(currentmode);
       }
-
-      console.log(currentmode);
     });
   });
 }
